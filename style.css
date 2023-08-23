@@ -1,0 +1,60 @@
+@keyframes white-circle{
+    0%{
+      
+      left: 0;
+      background-color: green;
+    }
+    25% {
+      top: 0;
+      left: 100%;
+      background-color: pink;
+      transform: translate(-100%);
+    }
+    50% {
+      top: 100%;
+      left: 100%;
+     
+      background-color: blue;
+      transform: translate(-100%)
+    }
+    75% {
+      top: 100%;
+      left: 0;
+      background-color: red;
+    }
+    100%{
+        top: 0;
+        right: 100;
+    }
+}
+  
+  
+            .content{
+              width: 500px;
+              height: 500px;
+              background-color: rgb(255, 255, 255);
+              margin-left:auto ;
+              margin-right: auto;
+              padding: 30px;
+            }
+            .content:hover .content-circle{
+                animation-play-state: paused ;
+              
+              }
+            .content-circle{
+              position: relative;
+              width: 100px;
+              height: 100px;
+              background-color: #ff0000;
+             
+            
+              left: 0;
+  
+              /* анімація */
+              
+              animation: white-circle 2600ms linear infinite alternate;
+            }
+  
+        
+  
+  
